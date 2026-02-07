@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+# ArthaVerse 🌾💰
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Gamified Financial Literacy for Rural India**
 
-Currently, two official plugins are available:
+ArthaVerse is an interactive, scenario-based game designed to teach essential financial literacy concepts to rural Indian communities. Players step into the shoes of a farmer, making critical decisions about crop management, insurance, loans, and emergency savings, experiencing the real-world consequences of their financial choices in a safe, virtual environment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![ArthaVerse Screenshot](https://images.unsplash.com/photo-1625246333195-bf46fe684615?q=80&w=1000&auto=format&fit=crop)
 
-## React Compiler
+## 🌟 Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **🌏 11 Indian Languages:** Fully localized in **Hindi, Marathi, Bengali, Telugu, Tamil, Gujarati, Kannada, Malayalam, Punjabi, Odia**, and English.
+*   **🚜 Realistic Scenarios:** Navigate through:
+    *   **Season Cycles:** Sowing, Growing, Harvest, and Lean seasons.
+    *   **Financial Dilemmas:** Choose between high-interest Money Lenders vs. Bank Loans.
+    *   **Risk Management:** Decide on Crop Insurance and Pest Control.
+    *   **Market Timing:** Sell immediately or wait for better prices (and risk spoilage).
+    *   **Life Events:** Handle family medical emergencies and discover Government Schemes.
+*   **📊 Dynamic Resource Management:** Balance **Cash**, **Crop Health**, **Stress**, and **Risk** levels.
+*   **🗣️ Voice-Enabled:** Text-to-speech support for accessibility.
+*   **📱 PWA Ready:** Installable as a Progressive Web App for offline play.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+*   **Frontend:** React 19, TypeScript, Vite
+*   **Styling:** Tailwind CSS 4, Lucide React (Icons)
+*   **State Management:** Zustand
+*   **Animation:** Framer Motion
+*   **Build Tool:** Vite
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/http-pruthvi/ArthaVerse.git
+    cd ArthaVerse
+    ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+4.  **Open the game:**
+    Visit `http://localhost:5173` in your browser.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🎮 How to Play
+
+1.  **Start a New Journey:** Click the "Start New Journey" button on the home screen.
+2.  **Choose Your Path:** Read (or listen to) the scenario and select one of the available choices.
+3.  **Monitor Your Stats:** Keep an eye on your Cash, Crop Health, and Stress levels.
+4.  **Survive & Thrive:** Try to make it through all seasons with a healthy profit and low stress!
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
